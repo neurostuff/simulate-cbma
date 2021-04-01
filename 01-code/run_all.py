@@ -18,6 +18,7 @@ def run_notebooks(note0_params, note1_params):
 if __name__ == "__main__":
     import sys
     run_type = sys.argv[1]
+    print(run_type)
     note0_params = dict(
         data_dir=abspath(join(dirname(__file__), 'intermediate_data')),
         overwrite=False,
