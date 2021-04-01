@@ -25,13 +25,17 @@ if __name__ == "__main__":
     )
 
     if run_type == "test":
+        if len(sys.argv) == 3:
+            n_jobs = sys.argv[2]
+        else:
+            n_jobs = None
         note1_params = {
             'DATA_DIR': abspath(join(dirname(__file__), 'intermediate_data')),
             'DSET_FILE': abspath(join(dirname(__file__), 'intermediate_data', 'test_dsets.pkl')),
             'OVERWRITE_DSETS': True,
             'N_DSET': 1,
             'N_ITERS': 2,
-            'N_JOBS': None,
+            'N_JOBS': n_jobs,
         }
     elif run_type == "small":
         n_jobs = sys.argv[2]
