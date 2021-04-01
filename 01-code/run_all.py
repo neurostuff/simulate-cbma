@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     if run_type == "test":
         if len(sys.argv) == 3:
-            n_jobs = sys.argv[2]
+            n_jobs = int(sys.argv[2])
         else:
             n_jobs = None
         note1_params = {
@@ -38,7 +38,7 @@ if __name__ == "__main__":
             'N_JOBS': n_jobs,
         }
     elif run_type == "small":
-        n_jobs = sys.argv[2]
+        n_jobs = int(sys.argv[2])
         note1_params = {
             'DATA_DIR': abspath(join(dirname(__file__), 'intermediate_data')),
             'DSET_FILE': abspath(join(dirname(__file__), 'intermediate_data', 'test_dsets.pkl')),
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             'N_JOBS': n_jobs,
         }
     elif run_type == "large":
-        n_jobs = sys.argv[2]
+        n_jobs = int(sys.argv[2])
         note1_params = {
             'DATA_DIR': abspath(join(dirname(__file__), 'intermediate_data')),
             'DSET_FILE': abspath(join(dirname(__file__), 'intermediate_data', 'test_dsets.pkl')),
