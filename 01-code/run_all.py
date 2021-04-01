@@ -53,3 +53,5 @@ if __name__ == "__main__":
             'N_ITERS': 10000,
             'N_JOBS': n_jobs,
         }
+
+    run_notebooks(note0_params, note1_params)
