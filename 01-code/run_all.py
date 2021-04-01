@@ -29,8 +29,8 @@ if __name__ == "__main__":
             'DATA_DIR': abspath(join(dirname(__file__), 'intermediate_data')),
             'DSET_FILE': abspath(join(dirname(__file__), 'intermediate_data', 'test_dsets.pkl')),
             'OVERWRITE_DSETS': True,
-            'N_DSET': 3,
-            'N_ITERS': 100,
+            'N_DSET': 1,
+            'N_ITERS': 2,
             'N_JOBS': None,
         }
     elif run_type == "small":

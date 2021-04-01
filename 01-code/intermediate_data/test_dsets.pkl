@@ -1,1 +1,1 @@
-../../.git/annex/objects/MM/37/MD5E-s175213852--cab958e79eca67a479bcc733406a7c79.pkl/MD5E-s175213852--cab958e79eca67a479bcc733406a7c79.pkl
+/annex/objects/MD5E-s175213852--cab958e79eca67a479bcc733406a7c79.pkl
