@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     # ensure directories exist
     makedirs(abspath(join(dirname(__file__), 'intermediate_data')), exist_ok=True)
-    makedirs(abspath(join(dirname(__file__), '../02-output'), exist_ok=True)
+    makedirs(abspath(join(dirname(__file__), '../02-output')), exist_ok=True)
 
     print(run_type)
     note0_params = dict(
