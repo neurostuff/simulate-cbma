@@ -1,0 +1,5 @@
+git+https://github.com/neurostuff/NiMARE.git@b833dd8
+papermill
+ipykernel
+jupyterlab
+ipywidgets
