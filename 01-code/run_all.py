@@ -1,4 +1,5 @@
 import papermill as pm
+from os import makedirs
 from os.path import abspath, dirname, join
 
 
@@ -18,6 +19,11 @@ def run_notebooks(note0_params, note1_params):
 if __name__ == "__main__":
     import sys
     run_type = sys.argv[1]
+
+    # ensure directories exist
+    makedirs(abspath(join(dirname(__file__), 'intermediate_data')), exist_ok=True)
+    makedirs(abspath(join(dirname(__file__), '../02-output'), exist_ok=True)
+
     print(run_type)
     note0_params = dict(
         data_dir=abspath(join(dirname(__file__), 'intermediate_data')),
